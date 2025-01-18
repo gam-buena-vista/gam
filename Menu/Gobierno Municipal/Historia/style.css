@@ -1,0 +1,127 @@
+/* Sección de Historia */
+.detail-box {
+    flex: none; /* No expandir horizontalmente */
+  width: 100%; /* Ocupar ancho completo */
+  text-align: center;
+  max-width: 500px; /* Ajusta según tus necesidades */
+  margin: 20px auto; /* Espaciado entre los elementos */
+  padding-bottom: 20px; /* Espaciado interno inferior */
+  border-bottom: 5px solid #0f0101; /* Línea divisoria debajo */
+  border-radius: 3%;
+}
+
+.about_section {
+    padding: 30px 60px;
+    background-image: url('../../../Imagenes/fondo-blanco.jpg'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover; /* Ajusta la imagen para que cubra toda la sección */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Fija la imagen para un efecto parallax */
+    color: #030000; /* Asegura que el texto sea legible sobre el fondo */
+}
+
+.about_section img {
+    width: 100%; /* Ocupa el 100% del contenedor */
+    max-width: 1500px; /* Ajusta este valor para aumentar el tamaño máximo */
+    border-radius: 8px; /* Mantiene los bordes redondeados */
+    margin: 20px auto; /* Reduce el margen superior para dar más espacio */
+    display: block; /* Centra la imagen si está dentro de un contenedor */
+}
+
+
+.detail-box {
+    flex: none; /* Los elementos no ocupan todo el espacio disponible */
+    width: 100%; /* Ocuparán el ancho completo del contenedor */
+    text-align: center;
+    max-width: 1000px; /* Puedes ajustar esto según necesites */
+    margin: 20px auto; /* Espaciado entre los elementos */
+}
+
+.custom_heading {
+    flex: 1;
+    text-align: left;
+    margin: 0; /* Elimina márgenes */
+    padding: 0; /* Elimina padding */
+    display: flex; /* Asegura que los elementos dentro de detail-box se alineen */
+    flex-direction: column; /* Organiza el contenido en columnas */
+    justify-content: flex-start;
+}
+
+.custom_heading span {
+    font-size: 2.5rem;
+    color: #18038f; /* Color principal de los títulos */
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about_section_content {
+    display: flex;
+      flex-direction: column; /* Cambiamos la disposición a columna */
+    justify-content: flex-start; /* Alineamos los elementos al inicio */
+    align-items: center; /* Centrado horizontal de los elementos */
+    gap: 30px; /* Espaciado entre los elementos */
+    margin-top: 30px;
+    padding: 0 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about_section img {
+    width: 100%;
+    border-radius: 8px; /* Borde redondeado para la imagen */
+    margin-top: 80px;
+}
+
+.about_section p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #080000;
+    text-align: justify; /* Alineación del texto */
+    margin-top: 20px;
+}
+
+  /* Media Queries */
+@media (max-width: 768px) {
+
+    .about_section img {
+      max-width: 600px; /* Tamaño ajustado para pantallas medianas */
+    }
+
+    .about_section_content {
+        flex-direction: column; /* Cambiamos a disposición vertical en pantallas pequeñas */
+        padding: 0 20px;
+    }
+
+    .custom_heading {
+      font-size: 1.5rem; /* Tamaño de fuente más pequeño en móviles */
+    }
+
+    .about_section p {
+      font-size: 0.9rem; /* Ajuste en el tamaño del texto */
+    }
+
+    .about_section_content .detail-box {
+      margin-bottom: 20px; /* Espaciado entre las cajas en diseño vertical */
+    }
+}
+
+@media (max-width: 576px) {
+
+    @media (max-width: 576px) {
+        .about_section img {
+        max-width: 100%; /* Ocupa todo el ancho del contenedor en pantallas pequeñas */
+    }
+    }
+
+    .about_section {
+      padding: 30px 15px; /* Menos espaciado en pantallas pequeñas */
+    }
+
+    .custom_heading {
+      font-size: 1.2rem; /* Ajuste del tamaño de los títulos */
+    }
+
+    .about_section p {
+      font-size: 0.85rem; /* Reducción en el tamaño del texto */
+    }
+}
