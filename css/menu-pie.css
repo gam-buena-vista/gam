@@ -150,7 +150,7 @@ header label {
 
   /* Añadir espacio para el contenido principal cuando el menú está activo */
   main {
-    margin-top: 80px; /* Ajusta según el tamaño de tu header */
+    margin-top: 10%; /* Ajusta según el tamaño de tu header */
   }
 }
 
