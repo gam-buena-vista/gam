@@ -1,5 +1,5 @@
-{
-    
-	document.getElementById("fecha_cabecera").innerHTML = " Ultima actualizacion Lunes 9 de Enero de 2025 ";
-		document.getElementById("fecha_pie").innerHTML = " Sitio actualizado al: 09/01/2025 ";
-} 
+// Obtener la fecha de la última actualización
+const lastUpdated = document.lastModified;
+
+// Mostrar la fecha en el elemento con id "update-time"
+document.getElementById("update-time").innerText = lastUpdated;
