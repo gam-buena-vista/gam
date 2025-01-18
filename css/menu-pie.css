@@ -147,6 +147,11 @@ header label {
   #menu:checked ~ .navbar {
     display: initial;
   }
+
+  /* Añadir espacio para el contenido principal cuando el menú está activo */
+  main {
+    margin-top: 80px; /* Ajusta según el tamaño de tu header */
+  }
 }
 
 main {
