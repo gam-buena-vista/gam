@@ -9,44 +9,45 @@
 
 body {
   background-image: url(../Imagenes/fondo-blanco.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: #fff;
+  background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+  color: #fff; /* Cambia el color del texto si la imagen tiene un fondo oscuro */
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
   margin: 0;
   padding: 0;
   font-size: 16px;
 }
-
 /* Header y menú */
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(14, 76, 247, 0.9);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  padding: 1rem 2%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 1000;
-  transition: all 0.3s ease-in-out;
+  position: fixed; /* Mantiene el header fijo en la parte superior */
+  top: 0; /* Alinea el header al borde superior */
+  left: 0; /* Extiende el header al borde izquierdo */
+  right: 0; /* Extiende el header al borde derecho */
+  
+  background-color: rgba(14, 76, 247, 0.9); /* Ajusta la opacidad para mayor legibilidad */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Incrementa la profundidad del sombreado */
+  padding: 1rem 2%; /* Agrega espacio interno horizontal */
+  display: flex; /* Activa el layout flex */
+  align-items: center; /* Centra los elementos verticalmente */
+  justify-content: space-between; /* Espacia los elementos al máximo horizontalmente */
+  z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+  transition: all 0.3s ease-in-out; /* Añade una transición suave para interacciones */
   text-transform: uppercase;
+  
 }
 
 img {
-  width: 150px; /* Reduce el tamaño de la imagen */
+  width: 200px;
   vertical-align: middle;
 }
 
 header .logo {
   font-weight: bold;
-  font-size: 1.5rem; /* Tamaño relativo para pantallas pequeñas */
+  font-size: 1.5rem; /* Usa rem para tamaño relativo */
   color: aliceblue;
 }
 
@@ -56,10 +57,11 @@ header .navbar ul {
 
 header .navbar ul li {
   position: relative;
+  float: left;
 }
 
 header .navbar ul li a {
-  font-size: 1rem; /* Reduce el tamaño en pantallas pequeñas */
+  font-size: 1.125rem; /* Cambia px a rem para ser relativo */
   padding: 10px 15px;
   color: aliceblue;
   display: block;
@@ -75,6 +77,11 @@ header .navbar ul li ul {
   width: 200px;
   background-color: #5c40fd;
   display: none;
+}
+
+header .navbar ul li ul li {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 header .navbar ul li ul li ul {
@@ -100,14 +107,13 @@ header label {
   display: none;
 }
 
-/* Estilo para pantallas pequeñas */
-@media (max-width: 991px) {
+@media(max-width:991px) {
   header {
-    padding: 20px 2%; /* Reduce padding */
+    padding: 20px 2%;
   }
 
   header label {
-    display: inline-block; /* Muestra el ícono del menú */
+    display: inline-block;
   }
 
   header .navbar {
@@ -117,7 +123,7 @@ header label {
     right: 0;
     background-color: #5c40fd;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-    display: none; /* Oculta el menú inicialmente */
+    display: none;
     flex-direction: column;
     align-items: center;
   }
@@ -128,12 +134,16 @@ header label {
   }
 
   header .navbar ul li {
-    width: 100%; /* Asegura que los elementos se adapten al ancho */
+    width: 100%;
   }
 
   header .navbar ul li ul {
-    position: relative; /* Cambia a relativo para evitar problemas de superposición */
+    position: relative;
     width: 100%;
+  }
+
+  header .navbar ul li ul li {
+    background-color: #5c40fd;
   }
 
   header .navbar ul li ul li ul {
@@ -142,12 +152,11 @@ header label {
   }
 
   #menu:checked ~ .navbar {
-    display: flex; /* Muestra el menú al activarlo */
+    display: flex;
   }
-
-  /* Ajustar márgenes para el contenido principal */
+  /* Añadir espacio para el contenido principal cuando el menú está activo */
   main {
-    margin-top: 15%; /* Espacio para el header */
+    margin-top: 15%; /* Ajusta según el tamaño de tu header */
   }
 }
 
@@ -170,11 +179,11 @@ header label {
   }
 }
 
-/* Contenido principal */
 main {
-  flex: 1;
+  flex: 1; /* Hace que el contenido principal ocupe el espacio restante */
   padding: 2rem; /* Agrega algo de espacio en los laterales */
 }
+
 
 
 
@@ -248,12 +257,3 @@ main {
   }
 }
 
-.last-updated {
-  text-align: center;
-  font-size: 1rem;
-  color: #fff; /* Cambia según tu diseño */
-  background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
-  padding: 10px;
-  margin-top: 20px;
-  border-radius: 5px;
-}
