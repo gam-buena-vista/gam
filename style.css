@@ -246,20 +246,20 @@ body{
   }
 }
 
-
 /* General styling for the footer section */
 .mbr-footer {
   background-color: rgba(0, 0, 0, 0.5); /* Dark background */
   color: #fff; /* White text for contrast */
-  padding: 40px 60px; /* Add padding for spacing */
+  padding: 5vh 5vw; /* Add responsive padding */
   position: relative;
+  box-sizing: border-box; /* Ensure padding doesn't affect dimensions */
 }
 
 .mbr-footer .mbr-overlay {
   position: absolute;
   top: 0;
   left: 0;
-  width: 0%;
+  width: 100%; /* Cover the entire footer */
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
   z-index: -1; /* Place below content */
@@ -267,14 +267,14 @@ body{
 
 /* Styling for footer content */
 .mbr-footer-content {
-  margin: 20px 0;
+  margin: 2vh 0;
   text-align: left;
 }
 
 .mbr-footer-content i {
   color: #ffc107; /* Highlight icons with a gold color */
-  font-size: 24px; /* Larger icons */
-  margin-right: 10px; /* Space between icon and text */
+  font-size: 1.5em; /* Scaled icon size */
+  margin-right: 1vw; /* Space between icon and text */
   vertical-align: middle;
 }
 
@@ -291,7 +291,7 @@ body{
 
 /* Facebook embed adjustments */
 .fb-page {
-  margin-top: 20px;
+  margin-top: 2vh;
   text-align: center;
   transform: scale(1.1); /* Slightly larger Facebook embed */
   transform-origin: center; /* Center scaling */
@@ -300,34 +300,54 @@ body{
 .fb-page iframe {
   border: 2px solid #ffc107; /* Highlighted border */
   border-radius: 5px; /* Slightly rounded corners */
+  max-width: 100%; /* Ensure it doesn't exceed the container width */
+  height: auto; /* Maintain aspect ratio */
 }
 
 /* Layout styling */
 .Enlaces .row {
   display: flex;
   flex-wrap: wrap; /* Allow wrapping for smaller screens */
-  justify-content: space-around; /* Distribute sections evenly */
+  justify-content: space-between; /* Distribute sections evenly */
+  gap: 2vw; /* Add space between sections */
 }
 
 .mbr-footer-content.col-md-3 {
-  flex: 1 1 25%; /* Each section takes 25% of the row on large screens */
+  flex: 1 1 22%; /* Take up roughly 25% of the row on large screens */
+  max-width: 300px; /* Limit max width for better layout */
   min-width: 100px; /* Minimum width for smaller screens */
-  padding: 10px; /* Add spacing between sections */
+  padding: 1vw; /* Add spacing between sections */
   box-sizing: border-box; /* Include padding in width calculation */
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .mbr-footer-content {
-      text-align: center; /* Center-align text for smaller screens */
+    text-align: center; /* Center-align text for smaller screens */
   }
   .Enlaces .row {
-      flex-direction: column; /* Stack sections vertically */
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center; /* Center sections horizontally */
   }
   .fb-page {
-      margin: 20px auto; /* Center Facebook embed */
+    margin: 2vh auto; /* Center Facebook embed */
   }
 }
+
+@media (max-width: 480px) {
+  .mbr-footer {
+    padding: 4vh 2vw; /* Reduce padding for very small screens */
+  }
+  .mbr-footer-content i {
+    font-size: 1.2em; /* Smaller icons */
+  }
+  .mbr-footer-content.col-md-3 {
+    flex: 1 1 100%; /* Take full width on very small screens */
+    text-align: center;
+  }
+}
+
+
 
 /* Estilo general para la sección */
 .mbr-section {
