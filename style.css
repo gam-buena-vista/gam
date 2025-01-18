@@ -401,78 +401,7 @@ body{
 }
 
 
-.mbr-footer {
-  background-color: rgba(0, 0, 0, 0.5); 
-  color: #fff; 
-  padding: 40px 60px; 
-  position: relative;
-}
-
-.mbr-footer .mbr-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); 
-  z-index: -1;
-}
-
-.mbr-footer-content {
-  margin: 20px 0;
-  text-align: left;
-}
-
-.mbr-footer-content i {
-  color: #ffc107; 
-  font-size: 24px; 
-  margin-right: 10px; 
-  vertical-align: middle;
-}
-
-
-.mbr-footer-content a {
-  color: #ffc107; 
-  text-decoration: none; 
-  font-weight: bold;
-}
-
-.mbr-footer-content a:hover {
-  text-decoration: underline; 
-}
-
-.fb-page {
-  margin-top: 20px;
-  text-align: center;
-}
-
-
-.Enlaces .row {
-  display: flex;
-  flex-wrap: wrap; 
-  justify-content: space-around; 
-}
-
-.mbr-footer-content.col-md-3 {
-  flex: 1 1 25%; 
-  min-width: 200px; 
-  padding: 10px; 
-  box-sizing: border-box; 
-}
-
-
-@media (max-width: 768px) {
-  .mbr-footer-content {
-      text-align: center; 
-  }
-  .Enlaces .row {
-      flex-direction: column; 
-  }
-  .fb-page {
-      margin: 20px auto; 
-  }
-}
-
+http://127.0.0.1:5500/index.html
 
 /* Estilo general para la sección */
 .custom-section {
