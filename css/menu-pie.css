@@ -9,45 +9,44 @@
 
 body {
   background-image: url(../Imagenes/fondo-blanco.jpg);
-  background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
-  background-position: center; /* Centra la imagen */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-  background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
-  color: #fff; /* Cambia el color del texto si la imagen tiene un fondo oscuro */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   font-size: 16px;
 }
+
 /* Header y menú */
 header {
-  position: fixed; /* Mantiene el header fijo en la parte superior */
-  top: 0; /* Alinea el header al borde superior */
-  left: 0; /* Extiende el header al borde izquierdo */
-  right: 0; /* Extiende el header al borde derecho */
-  max-height: 10%; /* Limita la altura máxima al 10% de la pantalla */
-  background-color: rgba(14, 76, 247, 0.9); /* Ajusta la opacidad para mayor legibilidad */
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Incrementa la profundidad del sombreado */
-  padding: 0 2%; /* Agrega espacio interno horizontal */
-  display: flex; /* Activa el layout flex */
-  align-items: center; /* Centra los elementos verticalmente */
-  justify-content: space-between; /* Espacia los elementos al máximo horizontalmente */
-  z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
-  transition: all 0.3s ease-in-out; /* Añade una transición suave para interacciones */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(14, 76, 247, 0.9);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
   text-transform: uppercase;
-  flex-shrink: 0; /* Previene que se encoja */
 }
 
 img {
-  width: 200px;
+  width: 150px; /* Reduce el tamaño de la imagen */
   vertical-align: middle;
 }
 
 header .logo {
   font-weight: bold;
-  font-size: 2rem; /* Usa rem para tamaño relativo */
+  font-size: 1.5rem; /* Tamaño relativo para pantallas pequeñas */
   color: aliceblue;
 }
 
@@ -57,12 +56,11 @@ header .navbar ul {
 
 header .navbar ul li {
   position: relative;
-  float: left;
 }
 
 header .navbar ul li a {
-  font-size: 1.125rem; /* Cambia px a rem para ser relativo */
-  padding: 20px;
+  font-size: 1rem; /* Reduce el tamaño en pantallas pequeñas */
+  padding: 10px 15px;
   color: aliceblue;
   display: block;
 }
@@ -77,11 +75,6 @@ header .navbar ul li ul {
   width: 200px;
   background-color: #5c40fd;
   display: none;
-}
-
-header .navbar ul li ul li {
-  width: 100%;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 header .navbar ul li ul li ul {
@@ -107,13 +100,14 @@ header label {
   display: none;
 }
 
-@media(max-width:991px) {
+/* Estilo para pantallas pequeñas */
+@media (max-width: 991px) {
   header {
-    padding: 30px;
+    padding: 20px 2%; /* Reduce padding */
   }
 
   header label {
-    display: initial;
+    display: inline-block; /* Muestra el ícono del menú */
   }
 
   header .navbar {
@@ -123,20 +117,23 @@ header label {
     right: 0;
     background-color: #5c40fd;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-    display: none;
+    display: none; /* Oculta el menú inicialmente */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header .navbar ul {
+    width: 100%; /* Ocupa el ancho completo */
+    text-align: center; /* Centra los elementos */
   }
 
   header .navbar ul li {
-    width: 100%;
+    width: 100%; /* Asegura que los elementos se adapten al ancho */
   }
 
   header .navbar ul li ul {
-    position: relative;
+    position: relative; /* Cambia a relativo para evitar problemas de superposición */
     width: 100%;
-  }
-
-  header .navbar ul li ul li {
-    background-color: #5c40fd;
   }
 
   header .navbar ul li ul li ul {
@@ -145,19 +142,39 @@ header label {
   }
 
   #menu:checked ~ .navbar {
-    display: initial;
+    display: flex; /* Muestra el menú al activarlo */
   }
 
-  /* Añadir espacio para el contenido principal cuando el menú está activo */
+  /* Ajustar márgenes para el contenido principal */
   main {
-    margin-top: 20%; /* Ajusta según el tamaño de tu header */
+    margin-top: 15%; /* Espacio para el header */
   }
 }
 
-main {
-  flex: 1; /* Hace que el contenido principal ocupe el espacio restante */
+@media (max-width: 576px) {
+  header .logo {
+    font-size: 1.25rem; /* Reduce el tamaño del logo */
+  }
+
+  header .navbar ul li a {
+    font-size: 0.875rem; /* Reduce aún más el tamaño del texto */
+    padding: 8px 10px;
+  }
+
+  img {
+    width: 120px; /* Ajusta el tamaño del logo */
+  }
+
+  main {
+    margin-top: 20%; /* Más espacio para el header en móviles pequeños */
+  }
 }
 
+/* Contenido principal */
+main {
+  flex: 1;
+  padding: 2rem; /* Agrega algo de espacio en los laterales */
+}
 
 
 
