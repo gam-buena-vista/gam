@@ -315,7 +315,7 @@ body{
 .mbr-footer-content.col-md-3 {
   flex: 1 1 22%; /* Take up roughly 25% of the row on large screens */
   max-width: 300px; /* Limit max width for better layout */
-  min-width: 100px; /* Minimum width for smaller screens */
+  min-width: 50px; /* Minimum width for smaller screens */
   padding: 1vw; /* Add spacing between sections */
   box-sizing: border-box; /* Include padding in width calculation */
 }
