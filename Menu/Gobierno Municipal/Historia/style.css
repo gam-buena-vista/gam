@@ -105,9 +105,9 @@
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 480px) {
 
-    @media (max-width: 576px) {
+    @media (max-width: 480px) {
         .about_section img {
         max-width: 100%; /* Ocupa todo el ancho del contenedor en pantallas pequeñas */
     }
