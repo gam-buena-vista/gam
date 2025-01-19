@@ -142,8 +142,12 @@ main {
 
 @media (max-width: 480px) {
   .container-slider {
+    width: 95%; /* Mayor espacio para pantallas pequeñas */
     margin: 4%;
-    border-radius: 8px; /* Menor radio para pantallas pequeñas */
+    box-shadow: 
+      0 2px 6px rgba(0, 0, 0, 0.1),
+      0 10px 20px rgba(0, 0, 0, 0.1);
+  }
   }
   .slider__btn {
     width: 35px;
@@ -152,6 +156,8 @@ main {
     line-height: 35px;
   }
 }
+
+
 /* Sección general con fondo transparente */
 .mbr-section {
   background-color: transparent; /* Fondo transparente */
