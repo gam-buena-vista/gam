@@ -61,6 +61,7 @@ header .logo img {
   height: auto; /* Mantiene proporciones */
   object-fit: contain; /* Ajusta el logo dentro de su contenedor */
   display: block; /* Elimina los espacios en línea alrededor de la imagen */
+  max-height: 100px; /* Limita la altura máxima de la imagen para que se vea proporcional */
 }
 
 
