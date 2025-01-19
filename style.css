@@ -12,6 +12,8 @@ main {
   position: relative;
 }
 
+
+
 .container-slider{
   width: 95%;
   max-width: 90%;
@@ -25,7 +27,6 @@ main {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   z-index: 1;
 }
-
 /* Ajuste para imágenes dentro del slider */
 .slider__img {
   display: block;
@@ -34,7 +35,6 @@ main {
   object-fit: cover; /* Asegura que la imagen cubra el contenedor sin deformarse */
   transition: transform 0.5s ease;
 }
-
 .container-slider:hover {
   transform: scale(1.02); /* Pequeño efecto de zoom al pasar el mouse */
   box-shadow: 
@@ -55,6 +55,7 @@ main {
   overflow: hidden;
   height: 100%; /* Se adapta al contenedor */
 }
+
 
 .slider__btn {
   position: absolute;
@@ -162,13 +163,13 @@ main {
     object-fit: cover;
     transition: transform 0.5s ease;
 }
-  }
   
 .slider__btn {
   width: 40px;
   height: 40px;
   font-size: 1.2rem;
   line-height: 35px;
+}
 }
 
 
@@ -871,6 +872,3 @@ textarea {
       font-size: 14px; /* Aumenta el tamaño de la fuente en pantallas pequeñas */
   }
 }
-
-
-
