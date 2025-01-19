@@ -46,10 +46,11 @@ header {
 
 /* Ajustes globales para todas las imágenes */
 img {
-  max-width: 100%; /* Evita que la imagen exceda el tamaño del contenedor */
-  height: 45px; /* Mantiene las proporciones de las imágenes */
+ max-width: 100%; /* Evita que la imagen exceda el tamaño del contenedor */
+  height: auto; /* Mantiene las proporciones de las imágenes */
   object-fit: contain; /* Ajusta la imagen dentro del contenedor disponible */
   display: block; /* Elimina los espacios en línea alrededor de la imagen */
+  max-height: 100px; /* Limita la altura máxima de la imagen para que se vea proporcional */
 }
 
 header .logo {
@@ -194,6 +195,14 @@ header label {
 
   main {
     margin-top: 20%; /* Más espacio para el header en móviles pequeños */
+  }
+}
+
+/* En pantallas pequeñas */
+@media (max-width: 480px) {
+  img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho disponible */
+    max-height: 80px; /* Reduce la altura de la imagen en pantallas pequeñas */
   }
 }
 
