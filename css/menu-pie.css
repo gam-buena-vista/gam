@@ -27,29 +27,47 @@ header {
   top: 0; /* Alinea el header al borde superior */
   left: 0; /* Extiende el header al borde izquierdo */
   right: 0; /* Extiende el header al borde derecho */
-  
+  bottom: 0;
   background-color: rgba(14, 76, 247, 0.9); /* Ajusta la opacidad para mayor legibilidad */
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Incrementa la profundidad del sombreado */
-  padding: 1rem 2%; /* Agrega espacio interno horizontal */
+  padding: 2.5rem 0%; /* Agrega espacio interno horizontal */
   display: flex; /* Activa el layout flex */
   align-items: center; /* Centra los elementos verticalmente */
   justify-content: space-between; /* Espacia los elementos al máximo horizontalmente */
   z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
   transition: all 0.3s ease-in-out; /* Añade una transición suave para interacciones */
   text-transform: uppercase;
+  overflow: hidden;
+  max-height: 10% ;
   
 }
 
+
+
+/* Ajustes globales para todas las imágenes */
 img {
-  width: 200px;
-  vertical-align: middle;
+  max-width: 100%; /* Evita que la imagen exceda el tamaño del contenedor */
+  height: 45px; /* Mantiene las proporciones de las imágenes */
+  object-fit: contain; /* Ajusta la imagen dentro del contenedor disponible */
+  display: block; /* Elimina los espacios en línea alrededor de la imagen */
 }
 
 header .logo {
-  font-weight: bold;
-  font-size: 1.5rem; /* Usa rem para tamaño relativo */
-  color: aliceblue;
+  display: flex; /* Centra el logo */
+  align-items: center;
+  justify-content: center;
+  max-width: 200px; /* Limita el ancho máximo del contenedor */
+  padding: 0 10px; /* Espaciado interno alrededor del logo */
 }
+
+/* Ajustes específicos para el logo */
+header .logo img {
+  max-width: 100%; /* Asegura que el logo no supere su contenedor */
+  max-height: 80px; /* Limita el tamaño máximo del logo */
+  height: auto; /* Mantiene proporciones */
+  object-fit: contain; /* Ajusta el logo dentro de su contenedor */
+}
+
 
 header .navbar ul {
   list-style: none;
@@ -171,7 +189,7 @@ header label {
   }
 
   img {
-    width: 120px; /* Ajusta el tamaño del logo */
+    width: 50px; /* Ajusta el tamaño del logo */
   }
 
   main {
