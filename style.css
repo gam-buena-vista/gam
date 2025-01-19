@@ -335,6 +335,42 @@ main {
   }
 }
 
+/* Responsividad para pantallas de 480px o menores */
+@media (max-width: 480px) {
+  .text-box h2 {
+    font-size: 18px; /* Disminuye el tamaño del título */
+  }
+
+  .text-box p {
+    font-size: 13px; /* Disminuye el tamaño del texto */
+  }
+
+  .video-box iframe {
+    height: 250px; /* Ajusta aún más la altura del video para pantallas pequeñas */
+  }
+
+  .col-md-3, .col-md-4 {
+    margin-bottom: 10px; /* Reduce el margen entre las columnas */
+  }
+
+  /* Estilos para la imagen */
+  .col-md-3 img {
+    max-width: 90%; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
+  }
+}
+
+  /* Estilos para la imagen */
+  .col-md-3 img {
+    max-width: 90%; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
+  }
+}
+
+  /* Ajusta las imágenes y el contenido de la sección */
+  .col-md-3, .col-md-4 {
+    width: 100%; /* Cambia el ancho a 100% en pantallas pequeñas */
+    margin-bottom: 20px;
+  }
+
 /* General styling for the footer section */
 .mbr-footer {
   background-color: rgba(0, 0, 0, 0.6); /* Dark background */
