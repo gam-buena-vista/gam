@@ -44,14 +44,7 @@ header {
 
 
 
-/* Ajustes globales para todas las imágenes */
-img {
- max-width: 100%; /* Evita que la imagen exceda el tamaño del contenedor */
-  height: auto; /* Mantiene las proporciones de las imágenes */
-  object-fit: contain; /* Ajusta la imagen dentro del contenedor disponible */
-  display: block; /* Elimina los espacios en línea alrededor de la imagen */
-  max-height: 100px; /* Limita la altura máxima de la imagen para que se vea proporcional */
-}
+
 
 header .logo {
   display: flex; /* Centra el logo */
