@@ -51,7 +51,6 @@ main {
 .slider__section{
   width: 100%;
   overflow: hidden;
-  position: relative;
   height: 100%; /* Se adapta al contenedor */
 }
 
