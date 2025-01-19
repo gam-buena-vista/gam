@@ -190,7 +190,7 @@ header label {
   }
 
   img {
-    width: 50px; /* Ajusta el tamaño del logo */
+    width: 100%; /* Ajusta el tamaño del logo */
   }
 
   main {
