@@ -310,24 +310,30 @@ main {
 
 /* Responsividad */
 @media (max-width: 768px) {
-  #about .container {
-      padding-left: 15px;
-      padding-right: 15px;
+  .row {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección de los elementos a columna */
+    text-align: center;
   }
 
-  .text-box h2 {
-      font-size: 20px;
-  }
-
-  .text-box p {
-      font-size: 14px;
+  .col-md-3, .col-md-4 {
+    width: 100%; /* Asegura que ambos elementos ocupen el 100% del ancho en pantallas pequeñas */
+    margin-bottom: 20px;
   }
 
   .video-box iframe {
-      height: 300px;
+    height: 300px; /* Ajusta la altura del iframe en pantallas pequeñas */
+  }
+
+  /* Estilo para los textos y las imágenes */
+  .text-box h2 {
+    font-size: 20px;
+  }
+
+  .text-box p {
+    font-size: 14px;
   }
 }
-
 
 /* General styling for the footer section */
 .mbr-footer {
