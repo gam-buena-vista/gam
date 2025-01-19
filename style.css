@@ -12,8 +12,6 @@ main {
   position: relative;
 }
 
-
-
 .container-slider{
   width: 95%;
   max-width: 90%;
@@ -25,7 +23,9 @@ main {
   border-radius: 10px;
   background: #ffffff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1;
 }
+
 /* Ajuste para imágenes dentro del slider */
 .slider__img {
   display: block;
@@ -34,6 +34,7 @@ main {
   object-fit: cover; /* Asegura que la imagen cubra el contenedor sin deformarse */
   transition: transform 0.5s ease;
 }
+
 .container-slider:hover {
   transform: scale(1.02); /* Pequeño efecto de zoom al pasar el mouse */
   box-shadow: 
@@ -42,10 +43,11 @@ main {
 }
 
 .slider{
-  display: inline-flex;
+  display: flex;
   width: 400%;
   height: 100%;
   margin-left: -100%;
+  z-index: 1;
 }
 
 .slider__section{
@@ -53,7 +55,6 @@ main {
   overflow: hidden;
   height: 100%; /* Se adapta al contenedor */
 }
-
 
 .slider__btn {
   position: absolute;
