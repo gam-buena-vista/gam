@@ -133,6 +133,7 @@ main {
 
 @media (max-width: 480px) {
   .container-slider {
+    width: 95%; /* Mayor espacio para pantallas pequeñas */
     margin: 4%;
     border-radius: 8px; /* Menor radio para pantallas pequeñas */
   }
