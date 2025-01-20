@@ -197,19 +197,18 @@ header label {
 
 /* En pantallas pequeñas */
 @media (max-width: 480px) {
-  img {
-    width: 100%; /* Hace que la imagen ocupe todo el ancho disponible */
-    max-height: 90%; /* Reduce la altura de la imagen en pantallas pequeñas */
+  header {
+    height: 60px; /* Reduce la altura del header */
   }
-  
+
   header .logo {
-  display: flex; /* Centra el logo */
-  align-items: center;
-  justify-content: center;
-  max-width: 120px; /* Limita el ancho máximo del logo */
-  max-height: 120px; /* Asegura que el contenedor del logo no se expanda */
-  padding: 0 0px; /* Espaciado interno alrededor del logo */
-}
+    max-width: 100px; /* Reduce el tamaño máximo del logo */
+  }
+
+  header .logo img {
+    max-height: 100%; /* Mantén la imagen proporcional dentro del header */
+    height: auto; /* Asegura que las proporciones no se deformen */
+  }
   
 }
 
