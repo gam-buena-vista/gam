@@ -252,7 +252,7 @@ main {
 
 /* Estilos generales para las tarjetas */
 .card-container {
-  padding: 10px 10px;
+  padding: 0px 0px;
   text-align: center;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -285,7 +285,7 @@ main {
 }
 
 .card-block {
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   background-color: transparent;
   border-radius: 0 0 10px 10px;
@@ -313,24 +313,34 @@ main {
 .mbr-cards-col {
   flex: 1;
   max-width: 23%;
-  margin: 10px;
+  margin: 0px;
   position: relative; /* Necesario para asegurar la alineación */
 }
 
 @media (max-width: 768px) {
   .mbr-cards-col {
-
-      max-width: 100%;
+      max-width: 40%;
   }
 
   .card-img img {
       width: 20%;
   }
-  
+
+  .card-title {
+    font-size: 0.5rem; /* Disminuye el tamaño del título */
+  }
 }
 @media (max-width: 480px) {
+  .mbr-cards-col {
+    max-width: 30%; /* Una tarjeta por fila en pantallas pequeñas */
+  }
+
   .card-img img {
     width: 15%; /* Aumenta ligeramente el tamaño en pantallas muy pequeñas */
+  }
+
+  .card-title {
+    font-size: 0.4rem; /* Reduce aún más el tamaño del título */
   }
 }
 
