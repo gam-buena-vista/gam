@@ -330,7 +330,7 @@ main {
   }
 
   .card-title {
-    font-size: 0.5rem; /* Disminuye el tamaño del título */
+    font-size: 18px; /* Disminuye el tamaño del título */
   }
   
 }
@@ -346,7 +346,7 @@ main {
   }
 
   .card-title {
-    font-size: 0.3rem; /* Reduce aún más el tamaño del título */
+    font-size: 18px; /* Reduce aún más el tamaño del título */
   }
 }
 
