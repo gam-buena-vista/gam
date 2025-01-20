@@ -314,33 +314,39 @@ main {
   flex: 1;
   max-width: 23%;
   margin: 0px;
+  justify-content: center; 
   position: relative; /* Necesario para asegurar la alineación */
 }
 
 @media (max-width: 768px) {
   .mbr-cards-col {
-      max-width: 40%;
+    margin: 15%;
+      max-width: 70%;
   }
 
   .card-img img {
-      width: 20%;
+    width: 15%;
+    object-fit: contain;
   }
 
   .card-title {
     font-size: 0.5rem; /* Disminuye el tamaño del título */
   }
+  
 }
 @media (max-width: 480px) {
   .mbr-cards-col {
-    max-width: 30%; /* Una tarjeta por fila en pantallas pequeñas */
+    margin: 15%;
+    max-width: 70%; /* Una tarjeta por fila en pantallas pequeñas */
   }
 
   .card-img img {
-    width: 15%; /* Aumenta ligeramente el tamaño en pantallas muy pequeñas */
+    width: 10%; /* Aumenta ligeramente el tamaño en pantallas muy pequeñas */
+    object-fit: contain;
   }
 
   .card-title {
-    font-size: 0.4rem; /* Reduce aún más el tamaño del título */
+    font-size: 0.3rem; /* Reduce aún más el tamaño del título */
   }
 }
 
