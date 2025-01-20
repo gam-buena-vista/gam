@@ -45,7 +45,8 @@ header .logo {
   display: flex; /* Centra el logo */
   align-items: center;
   justify-content: center;
-  max-width: 200px; /* Limita el ancho máximo del contenedor */
+  max-width: 120px; /* Limita el ancho máximo del logo */
+  max-height: 120px; /* Asegura que el contenedor del logo no se expanda */
   padding: 0 10px; /* Espaciado interno alrededor del logo */
 }
 
