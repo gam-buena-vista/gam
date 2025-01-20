@@ -325,7 +325,7 @@ main {
   }
 
   .card-img img {
-    width: 15%;
+    width: 20%;
     object-fit: contain;
   }
 
@@ -341,12 +341,12 @@ main {
   }
 
   .card-img img {
-    width: 15%; /* Aumenta ligeramente el tamaño en pantallas muy pequeñas */
+    width: 20%; /* Aumenta ligeramente el tamaño en pantallas muy pequeñas */
     object-fit: contain;
   }
 
   .card-title {
-    font-size: 18px; /* Reduce aún más el tamaño del título */
+    font-size: 15px; /* Reduce aún más el tamaño del título */
   }
 }
 
