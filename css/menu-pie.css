@@ -47,7 +47,7 @@ header .logo {
   justify-content: center;
   max-width: 120px; /* Limita el ancho máximo del logo */
   max-height: 120px; /* Asegura que el contenedor del logo no se expanda */
-  padding: 0 10px; /* Espaciado interno alrededor del logo */
+  padding: 0 0px; /* Espaciado interno alrededor del logo */
 }
 
 /* Ajustes específicos para el logo */
