@@ -37,7 +37,6 @@ header {
   z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
   transition: all 0.3s ease-in-out; /* Añade una transición suave para interacciones */
   text-transform: uppercase;
-  overflow: hidden;
   max-height: 10% ;
   
 }
