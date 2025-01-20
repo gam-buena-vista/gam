@@ -341,7 +341,7 @@ main {
   }
 
   .card-img img {
-    width: 10%; /* Aumenta ligeramente el tamaño en pantallas muy pequeñas */
+    width: 15%; /* Aumenta ligeramente el tamaño en pantallas muy pequeñas */
     object-fit: contain;
   }
 
